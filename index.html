@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.svg" type="image/svg+xml">
+    <title>Wallet Keygen - Crypto Wallet Key Generator</title>
+    <meta name="description" content="A fully offline, open-source CLI tool for developers to generate secure wallet addresses and key-pairs from mnemonics. Simple, fast, and reliable.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <meta property="og:title" content="Wallet Keygen - Crypto Wallet Key Generator">
+    <meta property="og:description" content="A fully offline, open-source CLI tool for developers to generate secure wallet addresses and key-pairs from mnemonics. Simple, fast, and reliable.">
+    <meta property="og:image" content="https://tool.codedparts.com/wallet-keygen/logo.svg">
+    <meta property="og:url" content="https://tool.codedparts.com/wallet-keygen">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+              <img src="./logo.svg" alt="Wallet Keygen Logo" width="48">
+              <span>Wallet Keygen</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#installation">Installation</a>
+                <a href="https://github.com/Parthipan-Natkunam/Wallet-Keys" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Generate Ethereum Wallet Keys<br>with Confidence</h1>
+            <p>A fully offline, open-source CLI, BIP44 compatible tool for developers to generate secure wallet addresses and key-pairs from mnemonics. Simple, fast, and secure.</p>
+            <a href="#installation" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure & Offline</h3>
+                    <p>Generate key-pairs offline, without exposing your mnemonics to the internet.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>Built with Rust, a language known for its performance and safety.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>CLI Only</h3>
+                    <p>Built for developers with a focus on command-line efficiency and automation.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-code"></i>
+                    <h3>BIP44 Compatible</h3>
+                    <p>Generate addresses and key-pairs compatible with BIP44 standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="installation" id="installation">
+        <div class="container">
+            <h2>Clone the Repository</h2>
+            <div class="code-block">
+              <code>$ git clone https://github.com/Parthipan-Natkunam/Wallet-Keys.git</code>
+            </div>
+            <h2>Build & Install</h2>
+            <div class="code-block">
+                <code>$ cargo install --path .</code> 
+            </div>
+            <h2>Use the CLI</h2>
+            <div class="code-block">
+                <code>$ wallet-keygen --mnemonic "your twelve or twenty four word mnemonic phrase"</code>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="year"></span> Coded Parts. Open source and made with ♥️ for the developer community.</p>
+            <div class="social-links">
+                <a href="https://github.com/Parthipan-Natkunam/Wallet-Keys" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://bsky.app/profile/cached-data.bsky.social" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 
